@@ -1,9 +1,11 @@
 #include <iostream>
+#include <string>
+
+std::string greeting(const std::string& name) {
+    return "Hello, " + name + "!";
+}
 
 int main() {
-    std::cout << "Hello from Git!\n";
-    int i = 5;
-    int y = 2;
-    int j = 10;
+    std::cout << greeting("Git user") << '\n';
     return 0;
 }
